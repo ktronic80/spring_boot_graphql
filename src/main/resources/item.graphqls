@@ -1,0 +1,9 @@
+type Item {
+  name : String!
+  level : Int!
+}
+
+extend type Query {
+  items(level : Int) : [Item]!
+  itemsForPlayer(playerName : String) : [Item]!
+}

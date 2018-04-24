@@ -1,0 +1,9 @@
+type Inventory {
+  player : String!
+  maxSpace : Int!
+  items : [Item]!
+}
+
+type Query {
+  inventory(player : String) : Inventory!
+}
