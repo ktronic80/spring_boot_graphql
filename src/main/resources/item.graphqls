@@ -3,7 +3,6 @@ type Item {
   level : Int!
 }
 
-extend type Query {
-  items(level : Int) : [Item]!
+extend type Game {
   itemsForPlayer(playerName : String) : [Item]!
 }

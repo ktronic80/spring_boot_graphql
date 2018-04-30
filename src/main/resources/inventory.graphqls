@@ -4,6 +4,10 @@ type Inventory {
   items : [Item]!
 }
 
-type Query {
+schema {
+    query: Game
+}
+
+type Game {
   inventory(player : String) : Inventory!
 }

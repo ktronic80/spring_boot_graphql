@@ -4,7 +4,7 @@ import graphql.Scalars;
 import graphql.schema.GraphQLObjectType;
 import graphql.schema.GraphQLSchema;
 import my.example.graphql.resolver.ItemResolver;
-import my.example.graphql.resolver.Query;
+import my.example.graphql.resolver.Game;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
@@ -31,8 +31,8 @@ public class Application {
     }
 
     @Bean
-    public Query query() {
-        return new Query();
+    public Game query() {
+        return new Game();
     }
 
     @Bean
