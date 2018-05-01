@@ -1,7 +1,7 @@
 type Inventory {
   player : String!
   maxSpace : Int!
-  items : [Item]!
+  items : Item!
 }
 
 schema {

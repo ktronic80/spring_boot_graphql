@@ -30,12 +30,12 @@ public class Application {
                 .build();
     }
 
-    @Bean
+
     public Game query() {
         return new Game();
     }
 
-    @Bean
+
     public ItemResolver itemResolver() {
         return new ItemResolver();
     }
